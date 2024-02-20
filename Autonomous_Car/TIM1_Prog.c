@@ -47,15 +47,4 @@ void TMR1_VoidsetCompareMatchValueA (u16 compareValue)
 
 }
 
-
-void TMR1_VoidsetFastPWM_usingMode14(f32 dytyCycle, u16 freq)
-{
-	if(dytyCycle <= 100)
-	{
-		
-		
-		TIM1_ICR1  = ((1000000UL/freq)/4)-1;
-		
-		TIM1_OCR1A = ((dytyCycle*(TIM1_ICR1+1))/100.0)-1;
-	}
 }
