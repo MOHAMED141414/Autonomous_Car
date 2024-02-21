@@ -82,7 +82,7 @@ void EXTI_Voidaction(void)
 			timeDiff=(end_time+(256*ovfCounter_end))-(start_time+(256*ovfCounter_start));
 			
 			//calculate the distance
-			distance=timeDiff*0.068;//0.068->>((64/16000000)/2)*34300
+			distance=timeDiff*0.068;//0.068->>((64/16000000)/2)*34000
 			
 			//reset the counter to calculate new signal
 			ex_count=0;
